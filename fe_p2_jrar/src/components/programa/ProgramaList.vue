@@ -88,7 +88,10 @@ defineExpose({ obtenerLista })
             <th>Costo (Bs.)</th>
             <th>Fecha Inicio</th>
             <th>Estado</th>
+<<<<<<< HEAD
             <th>Áreas de Conocimiento</th>
+=======
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
             <th>Acciones</th>
           </tr>
         </thead>
@@ -106,9 +109,12 @@ defineExpose({ obtenerLista })
                 {{ getEstadoBadge(programa.estado).text }}
               </span>
             </td>
+<<<<<<< HEAD
             <td>
               {{ programa.areaConocimiento?.join(', ') || '-' }}
             </td>
+=======
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
             <td class="actions">
               <button class="btn-icon btn-edit" @click="emitirEdicion(programa)" title="Editar">
                 ✏️
@@ -123,7 +129,11 @@ defineExpose({ obtenerLista })
             </td>
           </tr>
           <tr v-if="programasFiltrados.length === 0">
+<<<<<<< HEAD
             <td colspan="10" style="text-align: center">No se encontraron resultados</td>
+=======
+            <td colspan="9" style="text-align: center">No se encontraron resultados</td>
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
           </tr>
         </tbody>
       </table>

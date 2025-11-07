@@ -27,7 +27,10 @@ const dialogVisible = computed({
 
 const nivelesAcademicos = ref<NivelAcademico[]>([])
 const programa = ref<Programa>({ ...props.programa } as Programa)
+<<<<<<< HEAD
 const areaSeleccionada = ref<string>('')
+=======
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
 
 watch(
   () => props.programa,
@@ -55,8 +58,12 @@ async function handleSave() {
       duracionMeses: Number(programa.value.duracionMeses),
       costo: Number(programa.value.costo),
       fechaInicio: programa.value.fechaInicio,
+<<<<<<< HEAD
       estado: programa.value.estado,
       areaConocimiento: areaSeleccionada.value ? [areaSeleccionada.value] : []
+=======
+      estado: programa.value.estado
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
     }
 
     if (props.modoEdicion) {
@@ -89,8 +96,11 @@ watch(
               : new Date(programa.value.fechaInicio).toISOString().split('T')[0]
           programa.value.fechaInicio = fecha as any
         }
+<<<<<<< HEAD
         // Cargar el área de conocimiento seleccionada
         areaSeleccionada.value = programa.value.areaConocimiento?.[0] || ''
+=======
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
       } else {
         programa.value = {
           idNivelAcademico: 0,
@@ -100,10 +110,15 @@ watch(
           duracionMeses: 12,
           costo: 0,
           fechaInicio: '',
+<<<<<<< HEAD
           estado: 'En Planificación',
           areaConocimiento: []
         } as any
         areaSeleccionada.value = ''
+=======
+          estado: 'En Planificación'
+        } as any
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
       }
     }
   }
@@ -211,6 +226,7 @@ onMounted(() => {
           </select>
         </div>
 
+<<<<<<< HEAD
         <div class="form-group">
           <label for="areaConocimiento">Área de Conocimiento*</label>
           <select id="areaConocimiento" v-model="areaSeleccionada" required>
@@ -222,6 +238,8 @@ onMounted(() => {
           </select>
         </div>
 
+=======
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
         <div class="modal-actions">
           <button type="button" class="btn btn-secondary" @click="dialogVisible = false">
             Cancelar

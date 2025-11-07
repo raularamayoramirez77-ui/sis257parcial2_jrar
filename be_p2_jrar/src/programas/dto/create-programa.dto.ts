@@ -1,7 +1,10 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Transform } from 'class-transformer';
 import {
+<<<<<<< HEAD
   IsArray,
+=======
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
   IsDateString,
   IsDefined,
   IsEnum,
@@ -62,9 +65,12 @@ export class CreateProgramaDto {
     message: 'El campo estado debe ser: En Planificación, En curso o Finalizado',
   })
   readonly estado: string;
+<<<<<<< HEAD
 
   @ApiProperty({ type: [String] })
   @IsNotEmpty({ message: 'El campo área de conocimiento es obligatorio' })
   @IsArray({ message: 'El campo área de conocimiento debe ser un arreglo' })
   readonly areaConocimiento: string[];
+=======
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
 }

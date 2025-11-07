@@ -42,9 +42,12 @@ export class Programa {
   })
   estado: string;
 
+<<<<<<< HEAD
   @Column('simple-array', { name: 'area_conocimiento' })
   areaConocimiento: string[];
 
+=======
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
   @CreateDateColumn({ name: 'fecha_creacion' })
   fechaCreacion: Date;
 

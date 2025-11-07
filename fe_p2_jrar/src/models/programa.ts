@@ -10,7 +10,10 @@ export interface Programa {
   costo: number
   fechaInicio: Date | string
   estado: 'En Planificación' | 'En curso' | 'Finalizado'
+<<<<<<< HEAD
   areaConocimiento: string[]
+=======
+>>>>>>> 82191e9195de0ab592728707dfe5b22e28e716f6
   nivelAcademico?: NivelAcademico
   fechaCreacion?: Date
   fechaModificacion?: Date
